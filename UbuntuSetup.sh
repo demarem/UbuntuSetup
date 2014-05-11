@@ -29,15 +29,25 @@ sudo apt-get install byobu
 sudo apt-get install python3-pip
 sudo apt-get install tree
 sudo apt-get install zsh
-sudo apt-get install chromium
+#sudo apt-get install chromium
+
+sudo wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 
 # python packages
 sudo pip3 install ipython3
 sudo pip3 install virtualenvwrapper
 
 # setup config files
-cp .vimrc ~/
 cp .zshrc ~/
 cp .aliases ~/
-echo 'NEXT STOP: $> source .zshrc'
+
+# setup vim
+git clone git://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
+cp my_configs.vim ~/.vim_runtime
+
+chsh -s `which zsh`
+
+echo 'NEXT STEPS: $> sudo shutdown -r 0 \
+                  $> source .zshrc'
 
