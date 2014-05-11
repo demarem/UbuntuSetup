@@ -34,7 +34,7 @@ sudo apt-get install zsh
 sudo wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 
 # python packages
-sudo pip3 install ipython3
+sudo pip3 install ipython
 sudo pip3 install virtualenvwrapper
 
 # setup config files

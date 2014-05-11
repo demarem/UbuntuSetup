@@ -3,5 +3,6 @@ alias python2="/usr/bin/python"
 alias pip="sudo pip3"
 #alias pip2="
 alias vimrc="vim ~/.vimrc"
+alias aliases="vim ~/.aliases"
 alias setup="cp ~/.aliases ~/.zshrc ~/.vim_runtime/my_configs.vim \
     ~/UbuntuSetup/ && vim ~/UbuntuSetup/UbuntuSetup.sh"
