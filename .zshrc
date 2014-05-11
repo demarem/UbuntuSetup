@@ -66,6 +66,11 @@ export PATH="$PATH:/Volumes/DemaFlash/chromium/depot_tools"
 export GYP_GENERATORS="ninja"
 export CHROME_DEVEL_SANDBOX="/Volumes/DemaFlash/chromium/src/out/Debug/chrome_sandbox"
 
+# virutalenvwrapper stuff
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

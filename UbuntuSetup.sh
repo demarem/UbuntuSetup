@@ -32,12 +32,12 @@ sudo apt-get install zsh
 sudo apt-get install chromium
 
 # python packages
-pip install ipython3
-pip install virtualwrapper
+sudo pip3 install ipython3
+sudo pip3 install virtualenvwrapper
 
 # setup config files
 cp .vimrc ~/
 cp .zshrc ~/
 cp .aliases ~/
-source .zshrc
+echo 'NEXT STOP: $> source .zshrc'
 
